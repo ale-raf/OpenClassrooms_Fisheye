@@ -1,5 +1,6 @@
 :root {
   --red: #901c1c;
+  --orange: #db8876;
 }
 * {
   margin: 0;
@@ -10,25 +11,27 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   color: var(--red);
 }
 header img {
   max-width: 250px;
 }
 a {
-  color: var(--red);
+  color: var(--orange);
 }
 .root {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  margin-bottom: 100px;
 }
 .root article {
   display: flex;
@@ -36,4 +39,24 @@ a {
   gap: 10px;
   justify-self: center;
   text-align: center;
+}
+.root article img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.root article img {
+  transition: 0.3s;
+}
+.root article a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.root article a:hover h2 {
+  color: var(--red);
+}
+.root article p:first-child {
+  color: var(--red);
 }

@@ -1,5 +1,5 @@
 export async function getJSONData(params) {
-  const res = await fetch("./data.json");
+  const res = await fetch("../data.json");
   const data = await res.json();
   const dataWithParams = data[params];
   return dataWithParams;

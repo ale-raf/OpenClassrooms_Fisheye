@@ -11,6 +11,7 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
 }
 header {
   display: flex;
@@ -86,5 +87,20 @@ aside p {
 }
 .photographer button:hover {
   background-color: var(--orange);
+  color: black;
+}
+#media__sort {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: var(--red);
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#media__sort:hover {
+  background-color: #db8876;
   color: black;
 }
